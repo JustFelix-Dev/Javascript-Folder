@@ -1,0 +1,38 @@
+.section{
+    
+    margin-right: auto;
+    margin-left: auto;
+    border: 3px solid transparent;
+    background-color: grey;
+    border-radius: 0px;
+    box-shadow: 0 0 10px black;
+    padding: 10px 50px;
+    width: 900px;
+    height: 300px;
+}
+
+
+button {
+    text-align: center;
+    padding:10px 30px;
+    margin: 0 15px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 0 2px #000;
+    border: 1px solid transparent;
+    font-size: medium;
+
+}
+
+button:hover{
+    background-color: orangered;
+    transition: 0.3s linear;
+    transform: scale(0.97);
+    box-shadow:  0 0 9px #000, 0 0 14px #000;
+}
+
+.result{
+    margin-left: 37%;
+    font-size: medium;
+}

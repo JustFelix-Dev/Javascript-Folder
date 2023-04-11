@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+    input{
+        accent-color: purple;
+    }
+    input:checked{
+        accent-color: brown;
+    }
+    .navOpen{
+        transform: translateX(0);
+    }
+    div{
+        background-color: brown;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 20;
+        padding: 1em;
+        transform: translateX(-100%);
+        transition: all ease-in 400ms;
+    }
+</style>
+<body>
+   <div class="named">Lorem ipsum dolor</div>
+   <button onclick="open()">Click Me!</button>
+    <script>
+       var name = document.querySelector('.named');
+          function open(){
+              name.classList.toggle("navOpen")
+              
+        }
+        // OOP - OBJECT ORIENTED PROGRAMMING
+        // PROCEDURAL PROGRAMMING
+
+        // OOP - POLYMORPHISM, ABSTRACTION, ENCAPSULATION, INHERITANCE
+        // Constructor
+        // this keyword
+
+        // class Car {
+        //     constructor(color,brand){
+        //         this.color = color;
+        //         this.brand = brand;
+        //     }
+        //     accelerate(){
+        //         console.log("Vrooom vrooom11")
+        //     }
+        // }
+
+        // class Truck extends Car {
+
+        // }
+
+        // let car1 = new Car("purple","Venza")
+        // let car2 = new Car('Urus','gray')
+        // let truck = new Truck("Hilux","Yellow")
+        // console.log(car1,car2,car1.accelerate(),car2.accelerate(),truck)
+    </script>
+</body>
+</html>

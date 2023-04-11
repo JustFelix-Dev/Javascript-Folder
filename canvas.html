@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<style>
+    #myCanvas{
+        width: 70%;
+        height: 40%;
+        border: 3px solid red;
+    }
+</style>
+<body>
+    <canvas id="myCanvas">
+
+    </canvas>
+    <br>
+    <button onclick="startGame()">Start Game</button>
+    <script>
+        let canva = document.getElementById('myCanvas');
+        let handle = canva.getContext("2d");
+        handle.fillStyle = "green"
+        var x = 0
+        var y = 0
+        var w = 20
+        var h = 10
+        const startGame = ()=>{
+            handle.clearRect(0,0,70,40)
+          handle.fillRect(x,y,w,h)
+            y = y + 12
+            handle.fillRect(x,y,w,h)
+            setTimeout(startGame,1000)
+        }
+        console.log(document)
+        document.addEventListener("keydown",function(event){
+            console.log(event.keyCode)
+            if(event.keyCode == 39){
+                    alert("Right Arrow Key Pressed")
+            }
+        })
+        
+     
+
+    </script>
+</body>
+</html>

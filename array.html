@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        Cars:
+    </h3>
+<p id="demo">
+
+</p>
+
+    <script>
+      const cars = ["BMW","VOLVO","AUDI","HYUNDAI","BENZ","ACURA"]
+      var clen = cars.length;
+
+      var list = "<ul>"
+        for (var i =0; i<clen; i++){
+            list += `<li> ${cars[i]}</li>`
+
+        }
+        list += "</ul>"
+        document.getElementById('demo').innerHTML = cars
+
+
+    
+    </script>
+</body>
+</html>
